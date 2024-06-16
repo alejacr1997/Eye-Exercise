@@ -5,15 +5,15 @@ body {
 }
 
 .eyes {
-  position: absolute;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
 }
 .eye {
-  width: 180px;
-  height: 240px;
+  width: 140px;
+  height: 200px;
   background: #fff;
   display: inline-block;
   margin: 40px;
@@ -46,4 +46,9 @@ body {
   cursor: pointer;
   text-align: center;
   width: 200px;
+}
+.distEyes {
+  display: grid;
+  grid-template-rows: repeat(3,1fr,0.5fr,2fr);
+  gap: 5px;
 }

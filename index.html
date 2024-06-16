@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="./styles.css" />
     <script src="eyes.js"></script>
   </head>
-  <body>
-    <div class="row">
+  <body class="distEyes">
+    <div class="row" style="grid-row: 1 / 2;">
       <div class="col-8 col-md-10">
         <div class="container">
           <select onchange="changeOptions('eyeColor')" class="form-multi-select form-multi-select-sm col-sm-6 choiceEye" id="eyeColor">
@@ -44,8 +44,7 @@
         <button width='100' height='30' class="btn btn-light" data-toggle="modal" data-target="#myModal" style="float: right;">?</button>
     </div> 
     </div>
-    
-    <div class="eyes">
+    <div class="eyes row " style="grid-row: 3 / 4;">
       <div class="eye">
         <div class="ball"></div>
       </div>
@@ -62,10 +61,10 @@
           <h4 class="modal-title">Instrucciones</h4>
         </div>
         <div class="modal-body" style="text-align: justify;">
-          <p>Selecciona un color para la pupila del ojo, utilizando el menu de Eye Color</p>
-          <p>Selecciona un color para el fondo de la pantalla, utilizando el menu de BackgroundColor</p>
-          <p>Una vez los selecciones presiona el change para actualizar y mostrar los cambios. Si no seleccionaste valores se actualizaran a los valores por defecto</p>
-          <p>Recuerda que los ojos se moveran de acuerdo a la posición del mouse, preferiblemente usalo en tu computador</p>
+          <p>Selecciona un color para la pupila del ojo, utilizando el menú de Eye Color</p>
+          <p>Selecciona un color para el fondo de la pantalla, utilizando el menú de BackgroundColor</p>
+          <p>Una vez los selecciones presiona change para actualizar y mostrar los cambios. Si no seleccionaste valores se actualizarán a los valores por defecto</p>
+          <p>Recuerda que los ojos se moverán de acuerdo a la posición del mouse, preferiblemente usalo en tu computador</p>
           <hr/>
           <p style="text-align: center; font-weight: bold;">Puedes realizar las combinaciones que desees</p>
         </div>
